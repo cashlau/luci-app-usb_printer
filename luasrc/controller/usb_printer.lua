@@ -21,6 +21,6 @@ function index()
 		return
 	end
 	
-	entry({"admin", "NAS"}, firstchild(), "NAS", 44).dependent = false
-	entry({"admin", "NAS", "usb_printer"}, cbi("usb_printer"), _("USB Printer Server"), 50)
+	entry({"admin", "nas"}, firstchild(), "NAS", 44).dependent = false
+	entry({"admin", "nas", "usb_printer"}, cbi("usb_printer"), _("USB Printer Server"), 50)
 end
